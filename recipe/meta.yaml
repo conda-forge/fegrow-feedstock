@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - openbabel
     - rdkit
     - mols2grid >=0.2.4
-    - openff-toolkit-base >=0.10.0
+    - openff-toolkit-base >=0.10.0, <0.11
     - parmed
     - openmm >=7.5.0
     - typing-extensions
