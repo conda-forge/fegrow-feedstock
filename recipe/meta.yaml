@@ -1,5 +1,5 @@
 {% set name = "fegrow" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/cole-group/FEgrow/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: dc4694c5f206d128e30650be591831682900febfa7a176b68c882f05c133753a
+  sha256: dee11748896ad2da696aeb11f7baaccc131ef06a2821f083ac91f93d3de1d5c1
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - openbabel
     - rdkit
     - mols2grid >=0.2.4
-    - openff-toolkit-base >=0.10.0
+    - openff-toolkit-base >=0.10.0, <0.11
     - parmed
     - openmm >=7.5.0
     - typing-extensions
