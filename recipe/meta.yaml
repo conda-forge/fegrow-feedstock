@@ -1,5 +1,5 @@
 {% set name = "fegrow" %}
-{% set version = "1.0.2" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,19 @@ package:
 
 source:
   url: https://github.com/cole-group/FEgrow/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: dc4694c5f206d128e30650be591831682900febfa7a176b68c882f05c133753a
+  sha256: 874cd5e8d15d03a819dd579599f9ce0df19a9536f1dbf8d652a77ac3a985c678
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
-    - openmm-torch >=0.7
+    - python >=3.8
     - openmmforcefields >=0.9.0
     - openbabel
     - rdkit
@@ -28,12 +27,17 @@ requirements:
     - openff-toolkit-base >=0.10.0, <0.11
     - parmed
     - openmm >=7.5.0
+    - openmm-ml
     - typing-extensions
-    - pdbfixer
+    - pdbfixer >=1.8.0
     - tqdm
-    - torchani
+    - torchani >2.2.0
+    - openmm-torch >=0.8
+    - pytorch-gpu >=1.10.0
     - py3dmol
     - prody >=2.0.2
+    - pint
+
 
 test:
   imports:
@@ -42,7 +46,7 @@ test:
     - pip
     - pytest
   commands:
-    - python -c "import pytest; from fegrow.testing import loc ; pytest.main([loc])"
+    - pytest fegrow/testing
 
 about:
   home: https://cole-group.github.io/FEgrow/
