@@ -46,7 +46,7 @@ test:
     - pip
     - pytest
   commands:
-    - pytest fegrow/testing
+    - python -c "import pytest; from fegrow.testing import loc ; pytest.main([loc])"
 
 about:
   home: https://cole-group.github.io/FEgrow/
