@@ -16,11 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
-    - openmm-torch >=0.7
+    - python >=3.8
     - openmmforcefields >=0.9.0
     - openbabel
     - rdkit
@@ -28,12 +27,16 @@ requirements:
     - openff-toolkit-base >=0.10.0, <0.11
     - parmed
     - openmm >=7.5.0
+    - openmm-ml
     - typing-extensions
-    - pdbfixer
+    - pdbfixer >=1.8.0
     - tqdm
-    - torchani
+    - torchani >2.2.0
+    - openmm-torch >=0.8
+    - pytorch-gpu >=1.10.0
     - py3dmol
     - prody >=2.0.2
+    - pint
 
 test:
   imports:
