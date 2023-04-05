@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cole-group/FEgrow/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 06b412dbdf4b152fdedd45e2248906cd68d1303f424d1869d7a4fac63ebfed8a
+  sha256: 9c036b287a8c8d584469828590aa4c23bf7aca8bf0d6c2d24b9eb3c11af59cd0
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
