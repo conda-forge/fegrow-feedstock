@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.8, <3.10
     - pip
   run:
-    - python >=3.8
+    - python >=3.8, <3.10
     - openmmforcefields >=0.9.0
     - openbabel
     - rdkit
@@ -37,7 +37,6 @@ requirements:
     - py3dmol
     - prody >=2.0.2
     - pint
-
 
 test:
   imports:

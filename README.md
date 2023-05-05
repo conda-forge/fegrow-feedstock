@@ -1,11 +1,11 @@
-About fegrow
-============
+About fegrow-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fegrow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cole-group.github.io/FEgrow/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fegrow-feedstock/blob/main/LICENSE.txt)
 
 Summary: FEgrow: generate congeneric ligands for FEP by growing a template molecule.
 
