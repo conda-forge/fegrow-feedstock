@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8, <3.11
-    - notebook<7.0.0
+    - notebook <7.0.0
     - openmmforcefields >=0.9.0
     - openbabel
     - rdkit
@@ -34,7 +34,7 @@ requirements:
     - tqdm
     - torchani >2.2.0
     - openmm-torch >=0.8
-    - pytorch-gpu >=1.10.0
+    - pytorch >=1.10.0
     - py3dmol >=1.8.0
     - prody >=2.0.2
     - pint !=0.2
