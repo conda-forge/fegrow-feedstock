@@ -1,5 +1,5 @@
 {% set name = "fegrow" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cole-group/FEgrow/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: f20791b5d562ea8267da7f7ee1dddb2dd6c5ee892123eb99571b76536c85194f
+  sha256: ee5c526a8c6984b79cbddb6f81779e0eea3942241c12fce19d906bdc63d52e9b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
